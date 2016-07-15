@@ -24,13 +24,13 @@ var clsUsage = new ClassUsage;
 
 
 /*
- * Example Usages of ClassHandler
+ * Example Usages of UserOptions
  */
 import {UserOptions} from './modules/userOptions';
 var optUsage = new UserOptions(
 	{
-		'option-one' : '',
-		'option-two' : 10000
+		optionone : 'Name Test'
+
 	}
 );
-console.log(optUsage)
+console.log(optUsage._defaults)
