@@ -7,8 +7,7 @@ Common JavaScript Functions and Modules written in TypeScript.
 
 #Author
 
-Abhijeet Bajracharya
-http://abhijeetbajracharya.com/
+[Abhijeet Bajracharya](http://abhijeetbajracharya.com/)
 
 ### Contributing
 
