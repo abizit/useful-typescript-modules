@@ -5,7 +5,6 @@
 
 export class ClassHandler {
 
-    // Add classname
     // @param {HTMLElement} Element Selector
     // @param {String} classname
     // Add provided classname to the element
@@ -13,7 +12,6 @@ export class ClassHandler {
         element.classList.add(className);
     }
 
-    // Remove classname
     // @param {HTMLElement} Element Selector
     // @param {String} classname
     // Remove provided classname to the element
@@ -21,12 +19,10 @@ export class ClassHandler {
         element.classList.remove(className);
     }
 
-    // Check for classname
     // @param {HTMLElement} Element Selector
     // @param {String} classname
-    // @return {Boolean}
+    // @return {Boolean} true if has class else false
     has(element: HTMLElement, className: string) {
-
         return element.classList.contains(className);
     }
 }
