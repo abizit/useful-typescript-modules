@@ -1,27 +1,32 @@
-export class ClassHandler {
 /*
  * @module ClassHandler
  * Performs Different Element Class functions
  */
-  add(element:HTMLElement,className:string){
-	  // Add classname
-      // @param {Element Selector} element
-      // @param {Class Name} className
-      // Add provided classname to the element
-	  element.classList.add(className);
-  }
-  remove(element:HTMLElement,className:string){
-	  // Remove classname
-	  // @param {Element Selector} element
-	  // @param {Class Name} className
-	  // Remove provided classname to the element
-	  element.classList.remove(className);
-  }
-  has(element:HTMLElement,className:string){
-	  // Check for classname
-	  // @param {Element Selector}
-	  // @param {Class Name}
-	  // @return {Boolean}
-	  return element.classList.contains(className);
-  }
+
+export class ClassHandler {
+
+    // Add classname
+    // @param {HTMLElement} Element Selector
+    // @param {String} classname
+    // Add provided classname to the element
+    add(element: HTMLElement, className: string) {
+        element.classList.add(className);
+    }
+
+    // Remove classname
+    // @param {HTMLElement} Element Selector
+    // @param {String} classname
+    // Remove provided classname to the element
+    remove(element: HTMLElement, className: string) {
+        element.classList.remove(className);
+    }
+
+    // Check for classname
+    // @param {HTMLElement} Element Selector
+    // @param {String} classname
+    // @return {Boolean}
+    has(element: HTMLElement, className: string) {
+
+        return element.classList.contains(className);
+    }
 }

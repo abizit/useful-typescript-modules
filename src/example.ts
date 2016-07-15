@@ -2,7 +2,6 @@
  * Example Usages of ClassHandler
  */
 import {ClassHandler} from './modules/classHandler.module';
-
 class ClassUsage {
 	private _classHandler: ClassHandler = new ClassHandler;
 
@@ -22,3 +21,16 @@ class ClassUsage {
 }
 
 var clsUsage = new ClassUsage;
+
+
+/*
+ * Example Usages of ClassHandler
+ */
+import {UserOptions} from './modules/userOptions';
+var optUsage = new UserOptions(
+	{
+		'option-one' : '',
+		'option-two' : 10000
+	}
+);
+console.log(optUsage)
