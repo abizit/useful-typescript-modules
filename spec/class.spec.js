@@ -1,3 +1,5 @@
+var classHandlerModule = require('./src/modules/classHandler.module');
+
 describe("Class Handler",function(){
 	var classH;
 	var	id;
