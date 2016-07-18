@@ -6,9 +6,9 @@ describe("Class Handler",function(){
 		classH = new ClassHandler();
 		id = document.getElementById('container');
 	})
-	it("should add class {hello}" ,function(){
-		classH.add(id,'hello');
-		expect(classH.has(id,'hello')).toBe(true);
+	it("should add class {testClass}" ,function(){
+		classH.add(id,'testClass');
+		expect(classH.has(id,'testClass')).toBe(true);
 	})
 
 	it("should remove class {className}",function(){
