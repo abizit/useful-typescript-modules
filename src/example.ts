@@ -22,7 +22,6 @@ class ClassUsage {
 
 var clsUsage = new ClassUsage;
 
-
 /*
  * Example Usages of UserOptions
  */

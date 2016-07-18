@@ -1,5 +1,3 @@
-var classHandlerModule = require('./src/modules/classHandler.module');
-
 describe("Class Handler",function(){
 	var classH;
 	var	id;
@@ -18,7 +16,7 @@ describe("Class Handler",function(){
 		expect(classH.has(id,'className')).toBe(false);
 	})
 
-	it("should have not have class {hello}" , function(){
+	it("should not have class {hello}" , function(){
 		expect(classH.has(id,'hello')).toBe(false);
 	})
 })
