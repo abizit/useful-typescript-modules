@@ -32,4 +32,4 @@ var optUsage = new UserOptions(
 
 	}
 );
-console.log(optUsage._defaults)
+console.log(optUsage)
