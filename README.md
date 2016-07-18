@@ -11,7 +11,7 @@ Common JavaScript Functions and Modules written in TypeScript.
 
 ## Tests
 Uses [Jasmine Testing Framework](https://github.com/jasmine/jasmine)<br />
-All Jasmine Spec files are inside [spec folder](/spec)
+All Jasmine Spec files are inside [spec folder](tests/spec)
 
 ### Contributing
 
