@@ -10,8 +10,8 @@ Common JavaScript Functions and Modules written in TypeScript.
 [Abhijeet Bajracharya](http://abhijeetbajracharya.com/)
 
 ## Tests
-Uses [Jasmine Testing Framework](https://github.com/jasmine/jasmine)
-<!-- <p>All Jasmine Spec files are inside [spec folder](/spec)</p> -->
+Uses [Jasmine Testing Framework](https://github.com/jasmine/jasmine)<br />
+All Jasmine Spec files are inside [spec folder](/spec)
 
 ### Contributing
 
