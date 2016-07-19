@@ -8,11 +8,12 @@ class ClassUsage {
 	constructor(){
 		var id = document.getElementById('container');
 
+
 		// Add Class
-		this._classHandler.add(id,'test1,test2,asdfasdf');
+		this._classHandler.add(id,'test, test2,asdfasdf');
 
 		// Remove Class
-		this._classHandler.remove(id,'classname');
+		this._classHandler.remove(id,'test, test2,asdfasdf');
 
 		//Toggle Class
 		this._classHandler.toggle(id,'classname')

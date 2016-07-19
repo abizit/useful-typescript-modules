@@ -11,7 +11,12 @@ export class ClassHandler {
     add(element: HTMLElement, className: string) {
 		var name = ClassHandler.inputCheck(className);
 			for(var i = 0; i < name.length ; i++){
-				element.classList.add(name[i]);
+				try{
+					element.classList.add(name[i]);
+				}
+				catch(e){
+					return 'Input Error: Space between class names. Sperate class names with comma(,) only'
+				}
 			}
     }
 
@@ -21,7 +26,12 @@ export class ClassHandler {
     remove(element: HTMLElement, className: string) {
 		var name = ClassHandler.inputCheck(className);
 			for(var i = 0; i < name.length ; i++){
-				element.classList.remove(name[i]);
+				try{
+					element.classList.remove(name[i]);
+				}
+				catch(e){
+					return 'Input Error: Space between class names. Sperate class names with comma(,) only'
+				}
 			}
     }
 
@@ -44,9 +54,6 @@ export class ClassHandler {
 	// @return {Object} with removed spaces and seperated on commas
 	static inputCheck(input:string):Array<string>{
 		var str = input.split(',');
-		for(var i = 0; i < str.length ; i++){
-			str[i] = str[i].replace(/ /g,'');
-		}
 		return str
 	}
 }
