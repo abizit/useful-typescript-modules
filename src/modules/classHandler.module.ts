@@ -7,22 +7,46 @@ export class ClassHandler {
 
     // @param {HTMLElement} Element Selector
     // @param {String} classname
-    // Add provided classname to the element
+    // Adds one or more class names to the element.
     add(element: HTMLElement, className: string) {
-        element.classList.add(className);
+		var name = ClassHandler.inputCheck(className);
+			for(var i = 0; i < name.length ; i++){
+				element.classList.add(name[i]);
+			}
     }
 
     // @param {HTMLElement} Element Selector
     // @param {String} classname
-    // Remove provided classname to the element
+    // Removes one or more class names from the element.
     remove(element: HTMLElement, className: string) {
-        element.classList.remove(className);
+		var name = ClassHandler.inputCheck(className);
+			for(var i = 0; i < name.length ; i++){
+				element.classList.remove(name[i]);
+			}
     }
 
     // @param {HTMLElement} Element Selector
     // @param {String} classname
-    // @return {Boolean} true if has class else false
-    has(element: HTMLElement, className: string) {
+    // @return {Boolean}, indicating whether the element has the specified class name.
+    has(element: HTMLElement, className: string):Boolean {
         return element.classList.contains(className);
     }
+
+	// @param {HTMLElement} Element Selector
+    // @param {String} classname
+    // Toggles between a class name for the element.
+	toggle(element:HTMLElement,className:string){
+		element.classList.toggle(className)
+	}
+
+	// @param {String} class name
+	// @private
+	// @return {Object} with removed spaces and seperated on commas
+	static inputCheck(input:string):Array<string>{
+		var str = input.split(',');
+		for(var i = 0; i < str.length ; i++){
+			str[i] = str[i].replace(/ /g,'');
+		}
+		return str
+	}
 }

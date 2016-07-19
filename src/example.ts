@@ -9,10 +9,13 @@ class ClassUsage {
 		var id = document.getElementById('container');
 
 		// Add Class
-		this._classHandler.add(id,'classname');
+		this._classHandler.add(id,'test1,test2,asdfasdf');
 
 		// Remove Class
 		this._classHandler.remove(id,'classname');
+
+		//Toggle Class
+		this._classHandler.toggle(id,'classname')
 
 		// Check if the id has class
 		var hasClass = this._classHandler.has(id,'classname');

@@ -7,7 +7,7 @@ describe("Class Handler",function(){
 		id = document.getElementById('container');
 	})
 	it("should add class {testClass}" ,function(){
-		classH.add(id,'testClass');
+		classH.add(id,'testClass, asdf');
 		expect(classH.has(id,'testClass')).toBe(true);
 	})
 
@@ -19,4 +19,13 @@ describe("Class Handler",function(){
 	it("should not have class {hello}" , function(){
 		expect(classH.has(id,'hello')).toBe(false);
 	})
+
+	it("{inputHandler} should return an object" ,function(){
+		var classes = 'class1, class2, class3';
+		expect(ClassHandler.inputCheck(classes)).toEqual(
+			jasmine.objectContaining(["class1","class2","class3"])
+		)
+	})
+	
+
 })
