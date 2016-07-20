@@ -15,6 +15,7 @@ export class ClassHandler {
 					element.classList.add(name[i]);
 				}
 				catch(e){
+					console.log(e.message);
 					return 'Input Error: Space between class names. Sperate class names with comma(,) only'
 				}
 			}
@@ -30,6 +31,7 @@ export class ClassHandler {
 					element.classList.remove(name[i]);
 				}
 				catch(e){
+					console.log(e.message);
 					return 'Input Error: Space between class names. Sperate class names with comma(,) only'
 				}
 			}

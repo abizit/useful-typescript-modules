@@ -2,29 +2,18 @@
  * Example Usages of ClassHandler
  */
 import {ClassHandler} from './modules/classHandler.module';
-class ClassUsage {
-	private _classHandler: ClassHandler = new ClassHandler;
+var clsUsage = new ClassHandler;
+var id = document.getElementById('container');
+// Add Class
+clsUsage.add(id,'test');
+// Remove Class
+clsUsage.remove(id,'test');
+//Toggle Class
+clsUsage.toggle(id,'classname');
+// Check if the id has class
+var hasClass = clsUsage.has(id,'classname');
+console.log(hasClass);
 
-	constructor(){
-		var id = document.getElementById('container');
-
-
-		// Add Class
-		this._classHandler.add(id,'test, test2,asdfasdf');
-
-		// Remove Class
-		this._classHandler.remove(id,'test, test2,asdfasdf');
-
-		//Toggle Class
-		this._classHandler.toggle(id,'classname')
-
-		// Check if the id has class
-		var hasClass = this._classHandler.has(id,'classname');
-		console.log(hasClass);
-	}
-}
-
-var clsUsage = new ClassUsage;
 
 /*
  * Example Usages of UserOptions
