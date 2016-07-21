@@ -2,6 +2,7 @@
  * Example Usages of ClassHandler
  */
 import {ClassHandler} from './modules/classHandler.module';
+
 var clsUsage = new ClassHandler;
 var id = document.getElementById('container');
 // Add Class
