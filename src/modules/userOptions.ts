@@ -8,7 +8,7 @@ export class UserOptions {
         optionone : 'hello', //String
         optiontwo : 2, //Number
         optionthree: true //Boolean
-    }
+    };
 
     // @param {Object} options User options
     constructor(
@@ -24,7 +24,7 @@ export class UserOptions {
     // @param {Object} options User options
     // @returns {Object} Merged values of defaults and options
     extendDefaults(userOptions: Object) {
-        var option
+        let option;
         for (option in userOptions) {
             if (userOptions.hasOwnProperty(option)) {
                 this._defaults[option] = userOptions[option];

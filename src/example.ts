@@ -3,8 +3,9 @@
  */
 import {ClassHandler} from './modules/classHandler.module';
 
-var clsUsage = new ClassHandler;
-var id = document.getElementById('container');
+let clsUsage = new ClassHandler;
+let id = document.getElementById('container');
+
 // Add Class
 clsUsage.add(id,'test');
 // Remove Class
@@ -12,18 +13,26 @@ clsUsage.remove(id,'test');
 //Toggle Class
 clsUsage.toggle(id,'classname');
 // Check if the id has class
-var hasClass = clsUsage.has(id,'classname');
+let hasClass = clsUsage.has(id,'classname');
 console.log(hasClass);
-
-
 /*
  * Example Usages of UserOptions
  */
 import {UserOptions} from './modules/userOptions';
-var optUsage = new UserOptions(
+let optUsage = new UserOptions(
 	{
 		optionone : 'Name Test'
 
 	}
 );
-console.log(optUsage)
+console.log(optUsage);
+
+console.log('hello');
+import { aQ } from './modules/chainable';
+console.log(aQ('.container'));
+aQ('.container').find('hello');
+
+
+
+
+
